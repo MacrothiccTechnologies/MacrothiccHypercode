@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MacroThicc HyperCode — Welcome</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="matrix" aria-hidden="true"></canvas>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">
+      <div class="logo">MT</div>
+      <div>
+        <div class="title">MacroThicc HyperCode</div>
+        <div class="subtitle">A custom programming language playground — hacker-style IDE for your wildest ideas.</div>
+      </div>
+    </div>
+
+    <h1 class="headline"><span class="glow">Welcome, Hacker. Wanna unleash your full potential on coding? You are in the right place!</span></h1>
+
+    <div class="terminal">
+      <div class="typewriter" id="typewriter" data-step="0">
+        <div class="term-line"><span class="prompt">~</span>Booting MacroThicc runtime...</div>
+        <div class="term-line"><span class="prompt">~</span>Loading modules: core, mem, op, thread...</div>
+        <div class="term-line"><span class="prompt">~</span>Ready. Press ENTER to teleport to the IDE.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:18px; display:flex; gap:12px; align-items:center;">
+      <button class="btn btn-primary" id="enterBtn">ENTER IDE</button>
+      <button class="btn btn-ghost" id="examplesBtn">SEE EXAMPLES</button>
+      <div style="flex:1"></div>
+      <div style="font-size:13px; color:#9fe; opacity:0.9">v1.0 • experimental</div>
+    </div>
+
+    <div class="hint">Tip: press <strong>Enter</strong> to open the editor. Or click <em>Enter IDE</em>.</div>
+  </div>
+
+  <aside class="side">
+    <div>
+      <div class="card-title">Why MacroThicc?</div>
+      <div class="card-desc">Design your own language, experiment with new keywords, run live demos, and teach the machine who’s boss.</div>
+    </div>
+
+    <div class="features">
+      <div class="feature"><div class="badge">>_</div><div><strong>Live Transpile</strong><div style="opacity:0.8;font-size:12px">MacroThicc → JS on the fly</div></div></div>
+      <div class="feature"><div class="badge">MM</div><div><strong>Memory Tools</strong><div style="opacity:0.8;font-size:12px">mem.alloc / mem.inspect / gc</div></div></div>
+      <div class="feature"><div class="badge">OP</div><div><strong>Operator Overload</strong><div style="opacity:0.8;font-size:12px">Custom ops at runtime</div></div></div>
+      <div class="feature"><div class="badge">WD</div><div><strong>Workers & Async</strong><div style="opacity:0.8;font-size:12px">Safe threading & fetch wrappers</div></div></div>
+    </div>
+
+    <div style="margin-top:12px; display:flex; gap:10px;">
+      <button class="btn btn-ghost" id="docsBtn">Docs</button>
+      <button class="btn btn-ghost" id="tutorialBtn">Quick Tutorial</button>
+    </div>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
